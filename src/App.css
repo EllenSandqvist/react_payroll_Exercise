@@ -48,6 +48,7 @@ header ul {
   text-decoration: none;
 }
 
+.active-link,
 .link:hover,
 .link:focus {
   text-decoration: underline;
