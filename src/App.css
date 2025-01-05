@@ -1,0 +1,193 @@
+::before,
+::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  background-color: #f3d4d4;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 7em;
+  background-color: rgb(241, 168, 192);
+}
+
+header {
+  padding: 2em;
+  text-shadow: rgb(98, 69, 78) 1px 1px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.link {
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: rgb(241, 168, 192);
+  background-color: rgb(51, 49, 49);
+  border-radius: 5px;
+}
+
+.btn-link:hover {
+  all: unset;
+  padding: 0.2em 0.5em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+header h2 {
+  background-color: white;
+  width: fit-content;
+  padding: 0.8em 1em;
+  border-radius: 50%;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  flex-grow: 1;
+  margin: 0.5em 2em;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2em;
+}
+
+.employee-ul li {
+  display: flex;
+  gap: 2em;
+  margin: 0.5em 0;
+}
+
+.addEmployee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  justify-content: center;
+  margin: 2em auto;
+  width: 70%;
+  padding: 2em;
+}
+
+.addEmployee-container h2 {
+  margin-bottom: 1em;
+}
+
+.addEmployee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 60%;
+}
+
+.addEmployee-form input {
+  font-size: 1.2rem;
+  padding: 0.2em;
+}
+
+.addEmployee-form label {
+  position: absolute;
+  left: -99999px;
+}
+
+.list-btn {
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-btn:hover {
+  background-color: rgb(94, 224, 94);
+}
+
+.delete-btn:hover {
+  background-color: rgb(224, 94, 94);
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  min-width: 48px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 1em;
+  align-self: center;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+}
+
+.btn:hover {
+  background-color: rgb(94, 224, 94);
+}
+
+/* Modal */
+.modal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  width: 30%;
+  border-radius: 20px;
+  padding: 4em 1em;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 1.5em;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
